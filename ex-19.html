@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- & Title of the webpage -->
+    <title>Layout: Lines & Block</title>
+    <!-- & Link to the CSS Stylesheet file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- & Header
+    ~ The space near the top of the webpage that will make it easier to understand and navigate
+    -->
+    <header class="flex-container">
+        <img
+            class="header-img"
+            src="img/a-maiden-soul-reaper-cherry-blossom.png"
+            alt="A maiden soul reaper kissed by cherry blossoms"
+        >
+        <hr class="vertical-divider">
+        <h1>🌸 Lines & Blocks 🌸</h1>
+        <hr class="vertical-divider">
+        <img
+            class="header-img"
+            src="img/a-maiden-soul-reaper-cherry-blossom.png"
+            alt="A maiden soul reaper kissed by cherry blossoms"
+        >
+    </header>
+    <br>
+    <hr class="section-divider">
+    <br>
+
+    <!-- & Main
+    ~ This is where the main information of the webpage will go
+    -->
+    <main>
+        <!-- & Section
+        ~ This groups together similar pieces of the webpage
+        ~ i.e. Displaying Elements
+        -->
+        <section>
+            <h2>🍵 Displaying Elements 🍵</h2>
+            <hr class="title-divider">
+
+            <ul>
+                <li>
+                    If a web page were like a piece of lined notebook paper and the elements were what you wrote on the page:
+                    <ul>
+                        <li>
+                            Some elements would be written on their own line.
+                        </li>
+                        <li>
+                            Other elements would be able to share a line with other elements.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    This concept can be applied to how elements are displayed on a site, from small ones like &lt;a&gt; and &lt;p&gt; to larger container-like ones such as &lt;div&gt;, &lt;section&gt;, or &lt;body&gt;.
+                </li>
+                <li>
+                    Elements are either displayed on the block level or the inline level.
+                </li>
+                <li>
+                    <b>Block</b> elements take up the entire "width" of whatever they're inside of. However, this can be changed (as well as the "height").
+                </li>
+                <li>
+                    By default, <b>block</b> elements are rendered on their own line by themselves.
+                </li>
+                <li>
+                    The &lt;div&gt; and &lt;p&gt; elements are common block elements:
+                    <ul>
+                        <li>
+                            &lt;div&gt;&lt;/div&gt;
+                        </li>
+                        <li>
+                            &lt;p&gt;Hello, World! What shall I research on Wikipedia today?&lt;/p&gt;
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Each element is displayed on its own line. Adding some styling can further visualize the following:
+                    <ul>
+                        <li>
+                            <img
+                                src="img/b-css-syntax-for-div-p-elements.png"
+                                alt="CSS Syntax for the div and p elements"
+                                width="250"
+                            >
+                        </li>
+                        <li>
+                            The &lt;div&gt; block element now has a defined "width" and "height", as well as a "background-color". Since it is rendered before the &lt;p&gt; paragraph element, the page will render like below:
+                            <ul>
+                                <li>
+                                    <img
+                                        src="img/c-rendered-div-and-p-elements.png"
+                                        alt="
+                                        Rendered div and p elements"
+                                        width="90%"
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Inline</b> elements only take up as much space as needed, and other elements may appear beside them. The &lt;a&gt; anchor element is a very popular inline element because links are always being used within blocks of text (i.e. a Wikipedia article with lots of links to other places).
+                </li>
+                <li>
+                    Wrapping "Wikipedia" into a link with the &lt;a&gt; anchor element (within the &lt;p&gt; paragraph element):
+                    <ul>
+                        <li>
+                            <img
+                                src="img/d-wrapping-wikipedia-in-anchor-element.png"
+                                alt="Wrapping Wikipedia into an anchor element"
+                                width="90%"
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    The "Wikipedia" text becomes a link that stays inline with the parent &lt;p&gt; element.
+                </li>
+                <li>
+                    If we wanted to change the default display of these elements, we would use the "display" property!
+                    <ul>
+                        <li>
+                            <img
+                                src="img/e-disply-syntax.png"
+                                alt="Change default display of elements with display property"
+                                width="200"
+                            >
+                        </li>
+                        <li>
+                            Unlike the block elements, inline elements cannot change their "width" or "height" properties.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    When we change the default display of the &lt;a&gt; element from "inline" to "block", this is the result:
+                    <ul>
+                        <li>
+                            <img
+                                src="img/f-change-default-display-of-anchor-element.png"
+                                alt="Change default display of anchor element from inline to block"
+                                width="90%"
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    There is one other display property to explore..."inline-block".
+                </li>
+                <li>
+                    When you set an element to "display: inline-block", you get the best of both worlds:
+                    <ul>
+                        <li>
+                            It can share the same line with other inline elements.
+                        </li>
+                        <li>
+                            Despite being inline, its width and height can be changed.
+                        </li>
+                        <li>
+                            For instance:
+                            <ul>
+                                <li>
+                                    <img
+                                        src="img/g-syntax-for-display-inline-block.png"
+                                        alt="Syntax to change elements display to inline-block"
+                                        width="275"
+                                    >
+                                </li>
+                                <li>
+                                    This is the rendered image:
+                                    <ul>
+                                        <li>
+                                            <img
+                                                src="img/h-rendered-element-display-inline-block.png"
+                                                alt="Rendered element with display inline-block"
+                                                width="375"
+                                            >
+                                        </li>
+                                        <li>
+                                            The above rendered image shows some elementsm like the &lt;div&gt; element, behave weirdly when set to just "inline". Any content inside remains, but the width and height of the &lt;div&gt; are pratically not there anymore.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <br>
+    <hr class="section-divider">
+    <br>
+
+    <!-- & Footer
+    ~ This is where the important inforamtion will go that is not suitable for the <header< element
+        ~ Footnotes
+        ~ Links to extended resources
+            ~ In the <a> element -> use the following for the "href" attribute
+                ~ href = "/privacy"
+            ~ Also use the "target" attribute to open the link in a new web broswer tab
+                ~ target = "_blank"
+            ~ Copyright information
+                ~ &copy; -> this is the symbol for copyright
+    -->
+    <footer class="flex-container">
+        <img
+            class="footer-img"
+            src="img/i-maiden-walks-through-the-bamboo-forest.png"
+            alt="Maiden walks through the bamboo forest"
+        >
+        <p>&copy; 2025 EtariaL33. All rights reserved.</p>
+        <img
+            class="footer-img"
+            src="img/i-maiden-walks-through-the-bamboo-forest.png"
+            alt="Maiden walks through the bamboo forest"
+        >
+    </footer>
+
+</body>
+</html>
