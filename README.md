@@ -96,8 +96,3 @@
     -   [ ] Will be the structure and skeleton of how the app will appear on the webpageWill be the structure and skeleton of how the app will appear on the webpage
 -   [ ] CSS:
     -   [ ] Encompass the style of the app and give it some flair
-
-<hr>
-
--   [ ] Link to visit the webpage:
-    -   [ ] <a href="https://rlb-local-library.netlify.app/" target="_blank">rlb-local-library</a>
